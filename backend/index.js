@@ -1,7 +1,7 @@
 //import libraries
 //import libraries
 
-import pkg from "../data.mjs";
+import pkg from "./data.js";
 const data = pkg;
 
 import express from "express";
@@ -9,7 +9,7 @@ const app = express();
 const port = 8000;
 
 app.get("/", (req, res) => {
-  res.send("Hello Worsfsld!");
+  res.send("Hello World!");
 });
 
 app.get("/pokemon", (req, res) => {
