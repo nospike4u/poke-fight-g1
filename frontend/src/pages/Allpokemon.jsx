@@ -1,21 +1,7 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+const Allpokemon = (getAllpokemon) => {
+  console.log(getAllpokemon);
 
-const Allpokemon = () => {
-  const [Allpokemon, setAllpokemon] = useState([]);
-
-  const getpokemon = async () => {
-    const response = await axios.get("http://localhost:8000/pokemon");
-
-    setAllpokemon(response.data);
-  };
-
-  useEffect(() => {
-    getpokemon();
-  }, []);
-  console.log(Allpokemon);
-
-  return <div>{Allpokemon.map((e) => e.id)}</div>;
+  return <div>Here is a list of Pokemon </div>;
 };
 
 export default Allpokemon;
