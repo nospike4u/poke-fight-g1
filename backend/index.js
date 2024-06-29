@@ -1,7 +1,7 @@
 //import libraries
 //import libraries
-import cors from "cors";
-import pkg from "../data.mjs";
+
+import pkg from "./data.js";
 const data = pkg;
 
 import express from "express";
@@ -10,7 +10,7 @@ const port = 8000;
 
 app.use(cors({ origin: "*" }));
 app.get("/", (req, res) => {
-  res.send("Hello Worsfsld!");
+  res.send("Hello World!");
 });
 
 app.get("/pokemon", (req, res) => {
