@@ -8,6 +8,7 @@ import express from "express";
 const app = express();
 const port = 8000;
 
+app.use(cors({ origin: "*" }));
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
