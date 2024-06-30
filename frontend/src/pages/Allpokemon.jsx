@@ -1,7 +1,7 @@
 import React from "react";
 
-const Allpokemon = () => {
+const AllPokemon = () => {
   return <div>Allpokemon</div>;
 };
 
-export default Allpokemon;
+export default AllPokemon;

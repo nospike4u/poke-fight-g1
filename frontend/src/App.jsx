@@ -11,7 +11,6 @@ function App() {
 
   return (
     <>
-
         <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="pokemon" element={<AllPokemon/>}/>
@@ -19,17 +18,6 @@ function App() {
             <Route path="pokemon/:id/:info" element={<PokemonInfo/>}/>
             <Route path="/*" element={<div>Error</div>}/>
         </Routes>
-
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/allpokemon" element={<Allpokemon />} />
-          <Route path="/pokemon/:id" element={<Singlepokemon />} />
-          <Route path="/pokemon/:id/:info" element={<Pokemoninfo />} />
-          <Route path="/*" element={<div>Error</div>} />
-        </Routes>
-      </BrowserRouter>
-
     </>
   );
 }
