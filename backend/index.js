@@ -9,8 +9,6 @@ const port = 8000;
 
 dotenv.config();
 app.use(cors({origin:"*"}))
-
-//This line allows us to execute POST and PUT requests
 app.use(express.json());
 
 app.get("/", (req, res) => {

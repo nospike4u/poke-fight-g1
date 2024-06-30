@@ -1,7 +1,6 @@
 import { useState, UseEffect } from "react";
 import "./index.css";
 import { Routes, Route, useNavigate } from "react-router-dom";
-
 import Home from "./pages/Home";
 import AllPokemon from "./pages/AllPokemon";
 import SinglePokemon from "./pages/SinglePokemon";
@@ -12,6 +11,7 @@ function App() {
 
   return (
     <>
+
         <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="pokemon" element={<AllPokemon/>}/>
@@ -19,6 +19,17 @@ function App() {
             <Route path="pokemon/:id/:info" element={<PokemonInfo/>}/>
             <Route path="/*" element={<div>Error</div>}/>
         </Routes>
+
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/allpokemon" element={<Allpokemon />} />
+          <Route path="/pokemon/:id" element={<Singlepokemon />} />
+          <Route path="/pokemon/:id/:info" element={<Pokemoninfo />} />
+          <Route path="/*" element={<div>Error</div>} />
+        </Routes>
+      </BrowserRouter>
+
     </>
   );
 }
