@@ -1,5 +1,7 @@
-const Allpokemon = () => {
-  return <div>Allpokemon</div>;
-};
+const AllPokemon =()=> {
+    return (
+        <div>allPokemon</div>
+    )
+}
 
-export default Allpokemon;
+export default AllPokemon;
