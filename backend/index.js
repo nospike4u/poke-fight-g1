@@ -19,6 +19,11 @@ app.get("/pokemon", (req, res) => {
   res.json(data);
 });
 
+app.get("/pokemon/playerselect", (req, res) => {
+  console.log(data)
+  res.json(data);
+});
+
 app.get("/pokemon/:id", (req, res) => {
   const singlePokemon = req.params;
   //console.log(singlePokemon);
