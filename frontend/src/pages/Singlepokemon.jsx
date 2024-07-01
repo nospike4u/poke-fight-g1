@@ -35,7 +35,7 @@ const Singlepokemon = () => {
           <p>
             <strong>ID:</strong> {pokemonId.id}
           </p>
-          <p>
+          {/*  <p>
             <strong>Name :</strong>
             {Object.entries(pokemonId.name).map((item, index) => (
               <li index={index}>{item}</li>
@@ -51,7 +51,7 @@ const Singlepokemon = () => {
           </p>
           <p>
             <strong>Type:</strong> {pokemonId.type[0]} , {pokemonId.type[1]}
-          </p>
+          </p> */}
         </div>
       </div>
     </div>
