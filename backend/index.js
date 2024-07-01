@@ -1,16 +1,15 @@
-//import libraries
-//import libraries
-
+import cors from 'cors';
+import dotenv from 'dotenv';
 import pkg from "./data.js";
-const data = pkg;
-
 import express from "express";
-import cors from "cors";
 
 const app = express();
+const data = pkg;
 const port = 8000;
 
-app.use(cors({ origin: "*" }));
+dotenv.config();
+app.use(cors({origin:"*"}))
+app.use(express.json());
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
