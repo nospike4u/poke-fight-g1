@@ -1,10 +1,10 @@
-import { useState, UseEffect } from "react";
-import "./index.css";
+//import { useState, useEffect } from "react";
+//import "./index.css";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import Home from "./pages/Home";
-import AllPokemon from "./pages/AllPokemon";
-import SinglePokemon from "./pages/SinglePokemon";
-import PokemonInfo from "./pages/PokemonInfo";
+import Allpokemon from "./pages/Allpokemon";
+import Singlepokemon from "./pages/Singlepokemon";
+import Pokemoninfo from "./pages/Pokemoninfo";
 
 function App() {
   const navigate = useNavigate();
@@ -13,9 +13,9 @@ function App() {
     <>
         <Routes>
             <Route path="/" element={<Home/>} />
-            <Route path="pokemon" element={<AllPokemon/>}/>
-            <Route path="pokemon/:id" element={<SinglePokemon/>}/>
-            <Route path="pokemon/:id/:info" element={<PokemonInfo/>}/>
+            <Route path="pokemon" element={<Allpokemon/>}/>
+            <Route path="pokemon/:id" element={<Singlepokemon/>}/>
+            <Route path="pokemon/:id/:info" element={<Pokemoninfo/>}/>
             <Route path="/*" element={<div>Error</div>}/>
         </Routes>
     </>
