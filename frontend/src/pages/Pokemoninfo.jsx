@@ -4,7 +4,7 @@ import axios from "axios";
 import App from "../App";
 import e from "cors";
 
-const PokemonInfo = () => {
+const Pokemoninfo = () => {
   const [pId, setId] = useState([]);
   const [pInfo, setInfo] = useState([]);
 
@@ -75,6 +75,7 @@ const PokemonInfo = () => {
                       <p key={pokemon.type} className="w-auto">Type: {pokemon}</p>
                     </div>
                   </div>
+            
                 ))
               ) : (
                 <p>Loading Pokémon data...</p>
@@ -101,4 +102,4 @@ const PokemonInfo = () => {
   );
 };
 
-export default PokemonInfo;
+export default Pokemoninfo;

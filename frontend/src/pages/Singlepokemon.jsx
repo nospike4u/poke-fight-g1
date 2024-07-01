@@ -1,7 +1,10 @@
 import React from "react";
 
-const SinglePokemon = () => {
-  return <div>Singlepokemon</div>;
+const Singlepokemon = () => {
+  return <div>Singlepokemon
+    <p>something</p>
+  </div>;
+
 };
 
-export default SinglePokemon;
+export default Singlepokemon;
