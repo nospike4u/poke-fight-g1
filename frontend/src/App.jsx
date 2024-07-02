@@ -1,11 +1,11 @@
 import "./index.css";
 import Home from "./pages/Home";
 import Allpokemon from "./pages/AllPokemon";
-
 import Singlepokemon from "./pages/SinglePokemon";
 import Pokemoninfo from "./pages/PokemonInfo";
 
 import { Routes, Route } from "react-router-dom";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +17,8 @@ function App() {
         <Route path="/pokemon/:id/:info" element={<Pokemoninfo />} />
         <Route path="/*" element={<div>Error</div>} />
       </Routes>
+
+      <Footer />
     </>
   );
 }

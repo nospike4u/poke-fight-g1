@@ -3,4 +3,9 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: grey;
+}
+
+.container-single {
+  border: solid 2px black;
 }
