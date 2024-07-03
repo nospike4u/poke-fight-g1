@@ -4,7 +4,7 @@ import { MongoClient } from "mongodb";
 import dotenv from "dotenv";
 dotenv.config();
 
-const uri2 = process.env.MONGO_URI;
+const uri = process.env.MONGO_URI;
 let client;
 let clientPromise;
 
@@ -13,12 +13,12 @@ if (!process.env.MONGO_URI) {
 }
 if (process.env.NODE_ENV === "developement") {
   if (!global._mongoClientPromise) {
-    client = new MongoClient(uri2);
+    client = new MongoClient(uri);
     global._mongoClientPromise = client.connect();
   }
   clientPromise = global._mongoClientPromise;
 } else {
-  client = new MongoClient(uri2);
+  client = new MongoClient(uri);
 
   clientPromise = client.connect();
   console.log("db is connected");

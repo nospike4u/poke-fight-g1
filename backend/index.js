@@ -3,16 +3,17 @@ import dotenv from "dotenv";
 import pkg from "./data.js";
 import express from "express";
 
-import "./data.js";
+import "./db.js";
 
-import connectDB from "./mongoosedb.js";
+//import connectDB from "./mongoosedb.js";
 
 const app = express();
 const data = pkg;
 const port = 8000;
-connectDB();
 
 dotenv.config();
+
+//connectDB();
 app.use(cors({ origin: "*" }));
 app.use(express.json());
 
