@@ -1,5 +1,9 @@
 import "./index.css";
 import Home from "./pages/Home";
+import Allpokemon from "./pages/Allpokemon";
+import Singlepokemon from "./pages/Singlepokemon";
+import Pokemoninfo from "./pages/Pokemoninfo";
+
 import Player from "./pages/Player.jsx";
 import Allpokemon from "./pages/Allpokemon";
 import Pokemoninfo from "./pages/Pokemoninfo";
@@ -21,5 +25,4 @@ function App() {
     </>
   );
 }
-
 export default App;
