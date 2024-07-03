@@ -1,10 +1,8 @@
 import "./index.css";
 import Home from "./pages/Home";
-import Allpokemon from "./pages/AllPokemon";
-
-import Singlepokemon from "./pages/SinglePokemon";
-import Pokemoninfo from "./pages/PokemonInfo";
-
+import Allpokemon from "./pages/Allpokemon";
+import Singlepokemon from "./pages/Singlepokemon";
+import Pokemoninfo from "./pages/Pokemoninfo";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -20,5 +18,4 @@ function App() {
     </>
   );
 }
-
 export default App;

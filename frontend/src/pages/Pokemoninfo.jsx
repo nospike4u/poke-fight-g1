@@ -3,7 +3,7 @@ import {Link, useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
 import App from "../App";
 
-const PokemonInfo =()=> {
+const Pokemoninfo =()=> {
     const [pokemonData, setPokemonData] = useState([]);
     const [error, setError] = useState(null);
 
@@ -50,4 +50,4 @@ const PokemonInfo =()=> {
     )
 }
 
-export default PokemonInfo;
+export default Pokemoninfo;
